@@ -311,7 +311,7 @@
     <p>
      Want a custom build? Questions about a project? Reach out below:
     </p>
-    <form action="/thank-you.html" data-netlify="true" method="POST" name="contact" netlify-honeypot="bot-field">
+    <form action="/thank-you.html" data-netlify="true" data-netlify-recaptcha="true" method="POST" name="contact" netlify-honeypot="bot-field">
      <input name="form-name" type="hidden" value="contact"/>
      <input name="form-location" type="hidden" value="Stonetone Contact"/>
      <!-- other visible form fields -->
@@ -347,6 +347,7 @@
        <textarea name="message" required="" rows="5"></textarea>
       </label>
      </p>
+     <div data-netlify-recaptcha="true"></div> <br />
      <p>
       <button type="submit">
        Send
