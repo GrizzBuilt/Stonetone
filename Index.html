@@ -1,3 +1,4 @@
+<!-- StoneTone Guitars index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,15 +21,17 @@
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stonetone Guitars | Custom Luthier, Setups & Upgrades in Conway, SC</title>
+  <title>Stonetone Guitars | Custom Guitar Builds, Setups & Upgrades in Conway, SC</title>
 
-  <meta name="description" content="Need a guitar luthier in Conway, SC? Stonetone Guitars provides pro setups, custom electric builds, upgrades, fret leveling, and wiring mods with vintage tone and feel. Built with soul in South Carolina."/>
+  <meta name="description" content="Need a guitar luthier in Conway, SC? Stonetone Guitars provides custom electric guitar builds, pro setups, upgrades, fret leveling, and wiring mods with vintage tone and feel. Built with grit in South Carolina."/>
   <meta name="author" content="Stonetone Guitars"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.stonetoneguitars.com/"/>
 
   <meta property="og:title" content="Stonetone Guitars | Custom Electric Guitar Builds and Upgrades"/>
-  <meta property="og:description" content="Handcrafted electric guitars with vintage tone and soul. Pro setups and upgrades. Built in Conway, SC."/>
+  <meta property="og:description" content="Handcrafted electric guitars with vintage tone and soul. Pro setups, upgrades, and custom builds in Conway, SC."/>
   <meta property="og:image" content="https://www.stonetoneguitars.com/images/preview.png"/>
-  <meta property="og:url" content="https://www.stonetoneguitars.com"/>
+  <meta property="og:url" content="https://www.stonetoneguitars.com/"/>
   <meta property="og:type" content="website"/>
 
   <meta name="twitter:card" content="summary_large_image"/>
@@ -44,7 +47,7 @@
       "@type": "LocalBusiness",
       "name": "Stonetone Guitars",
       "image": "https://www.stonetoneguitars.com/images/StoneToneLogo.png",
-      "url": "https://www.stonetoneguitars.com",
+      "url": "https://www.stonetoneguitars.com/",
       "telephone": "+18433501943",
       "email": "info@stonetoneguitars.com",
       "address": {
@@ -60,9 +63,32 @@
         "Custom Guitar Builds",
         "Guitar Setups",
         "Guitar Upgrades",
+        "Fret Work",
         "Luthier Services"
       ]
     }
+  </script>
+
+  <script>
+    (function () {
+      const key = "ef38c98a68164b1bbb6b12eee51e2559";
+      const host = "https://www.stonetoneguitars.com";
+
+      fetch("https://api.indexnow.org/indexnow", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          host: "www.stonetoneguitars.com",
+          key: key,
+          keyLocation: host + "/" + key + ".txt",
+          urlList: [
+            host + "/"
+          ]
+        })
+      }).catch(() => {});
+    })();
   </script>
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
@@ -73,6 +99,7 @@
       font-family: 'Roboto', sans-serif;
       background: #f3f0e7;
       color: #222;
+      line-height: 1.6;
     }
     header {
       background: #1c1c1c;
@@ -86,6 +113,7 @@
       color: #e0c36f;
       margin-top: 0.5rem;
       font-size: 1.5rem;
+      line-height: 1.4;
     }
     nav {
       background: #333;
@@ -109,6 +137,7 @@
     h2 {
       font-family: 'Rubik Mono One', monospace;
       color: #1c1c1c;
+      line-height: 1.4;
     }
     footer {
       background: #1c1c1c;
@@ -116,6 +145,9 @@
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
+    }
+    footer a {
+      color: #e0c36f;
     }
     .guitar-img {
       max-width: 75%;
@@ -136,13 +168,20 @@
       max-width: 8%;
       border: 0px solid #e0c36f;
       margin-top: 1rem;
-      display: inline-block; /* helps with centering inside cells */
+      display: inline-block;
     }
     .vintage-box {
       border: 2px dashed #333;
       background: #fffdf8;
       padding: 1rem;
       margin-top: 1.5rem;
+    }
+    .partner-box {
+      border: 2px dashed #333;
+      background: #fffdf8;
+      padding: 1rem;
+      margin-top: 2rem;
+      text-align: center;
     }
     form {
       background: #fffdf8;
@@ -158,6 +197,7 @@
       border: 1px solid #ccc;
       font-family: inherit;
       font-size: 1rem;
+      box-sizing: border-box;
     }
     button {
       background: #e0c36f;
@@ -171,7 +211,6 @@
       background: #cfae4d;
     }
 
-    /* Socials table: make it actually "centered" (table not 100% width) */
     .socials-table {
       width: auto;
       margin: 0 auto;
@@ -183,7 +222,6 @@
       vertical-align: middle;
     }
 
-    /* Your responsive-table class was forcing full-width; we keep it but let it behave */
     .responsive-table {
       margin: auto;
       text-align: center;
@@ -204,7 +242,16 @@
         white-space: nowrap;
       }
       .social-img {
-        max-width: 45px; /* better on mobile */
+        max-width: 45px;
+      }
+      .guitar-img,
+      .teez-img,
+      .pay-img {
+        max-width: 100%;
+      }
+      nav a {
+        display: inline-block;
+        margin: 0.35rem 0.6rem;
       }
     }
   </style>
@@ -228,32 +275,32 @@
     <section id="about">
       <h2>About Stonetone Guitars</h2>
       <p>
-        Our CEO/Master Builder, Todd Stone, started playing guitars when he was 12, that's like 40+ years ago. He had a dream of being Eddie VanHalen....didn't we all? In 2025 he decided that he wanted a Fender Stratocaster, not just any Stratocaster, he wanted an American Player Series, but it wasn't in his budget, so he decided to build his own, and the **Tropicaster** was born.
+        Our CEO/Master Builder, Todd Stone, started playing guitar when he was 12 — that’s 40+ years of loving loud guitars, raw tone, and the soul behind a good instrument. In 2025 he decided he wanted a Fender Stratocaster, not just any Stratocaster, but an American Player Series. It was out of budget, so he built his own, and the <strong>Tropicaster</strong> was born.
         <br/><br/>
-        Todd has built several custom guitars all with grit and soul. Inspired by Punk, Rock, Metal, Classic Rock and Blues, Stonetone Guitars brings vintage tones to the modern player—one hand-wired masterpiece at a time. **We specialize in custom electric guitar builds and professional luthier services right here in Conway, SC.**
+        Todd has built several custom guitars with grit and soul. Inspired by punk, rock, metal, classic rock, and blues, Stonetone Guitars brings vintage tones to the modern player — one hand-wired masterpiece at a time. <strong>We specialize in custom electric guitar builds and professional luthier services right here in Conway, SC.</strong>
+        <br/><br/>
+        And because style matters offstage too, our sister brand <a href="https://843teez.com/" target="_blank" rel="noopener">843 Teez offers custom t-shirt printing in Conway, SC</a> for bands, businesses, events, and anyone who wants shirts with attitude.
       </p>
     </section>
 
     <section id="services">
       <h2>Professional Guitar Luthier Services</h2>
-
-      <!-- FIX: removed <p> wrapper around <ul> -->
       <ul>
         <li>
           <strong>Custom Build Guitars</strong>
-          —You tell us what you want, and we'll make it -- Click <a href="custom__.html">Here </a>to get a Custom Quote
+          — You tell us what you want, and we’ll make it. Click <a href="custom__.html">here</a> to get a custom quote.
         </li>
         <li>
           <strong>Upgrades</strong>
-          —Want to give your guitar a new sound with new pickups, or upgrade the electronics? We can get it done, including wiring mods and hardware swaps.
+          — Want to give your guitar a new sound with new pickups, or upgrade the electronics? We can get it done, including wiring mods and hardware swaps.
         </li>
         <li>
-          <strong>Setup & Fret Work</strong>
-          —Even the cheapest guitar can sound and play better with a good setup. We provide professional setups, fret leveling, and intonation adjustments.
+          <strong>Setup &amp; Fret Work</strong>
+          — Even the cheapest guitar can sound and play better with a good setup. We provide professional setups, fret leveling, and intonation adjustments.
         </li>
         <li>
           <strong>Total Overhaul</strong>
-          — Looking to change the look and sound of your guitar? Talk to us. We can help you get the look and sound you're looking for without breaking the bank with a new guitar.
+          — Looking to change the look and sound of your guitar? Talk to us. We can help you get the look and sound you're after without breaking the bank on a new guitar.
         </li>
       </ul>
     </section>
@@ -262,66 +309,72 @@
       <h2>Custom Electric Guitar Builds</h2>
 
       <p>
-        All our guitars get the best hardware and electronics, ensuring reliability and tone that lasts.
+        All our guitars get quality hardware and electronics, ensuring reliability, playability, and tone that lasts.
       </p>
 
-      <!-- FIX: removed <p> wrapper around <ul> -->
       <ul>
         <li>
           <strong>Locking Tuners</strong>
-          —The improved tuning stability provided by locking tuners keeps you playing longer, and string changes are a breeze.
+          — Improved tuning stability keeps you playing longer, and string changes are a breeze.
         </li>
         <li>
           <strong>CTS Pots</strong>
-          —Made in America and used by Fender &amp; Gibson, need we say more 😊
+          — Made in America and used by Fender &amp; Gibson. Need we say more? 😊
         </li>
         <li>
           <strong>Oak-Grigsby &amp; Switchcraft Switches and Jacks</strong>
-          —Another one, made in America and used by Fender &amp; Gibson 😊
+          — Another made-in-America favorite trusted by Fender &amp; Gibson. 😊
         </li>
         <li>
           <strong>Tonerider Pickups</strong>
-          —Made in the UK, these pick up are a real favorite of our. Lots of option of Single coil to Humbucker, to P90.
+          — Made in the UK, these pickups are a real favorite of ours, with options from single-coils to humbuckers to P90s.
         </li>
       </ul>
 
       <div class="vintage-box">
         <p>
           <strong>Stonetone Classic Stratocaster:</strong>
-          Our first build, that started the whole thing was a classic Stratocaster in a Vintage Tahitian Coral paint job, with Fender Tex-Mex Pickups.
+          Our first build that started the whole thing was a classic Stratocaster in a Vintage Tahitian Coral paint job, loaded with Fender Tex-Mex pickups.
         </p>
-        <img alt="Stonetone Tropiaster Custom Stratocaster with Vintage Tahitian Coral Finish" class="guitar-img" max-width="350" src="images/tropi1.png" style="max-width: 100%; height: auto; display: block; margin: auto;"/>
+        <img alt="Stonetone Tropicaster Custom Stratocaster with Vintage Tahitian Coral Finish" class="guitar-img" max-width="350" src="images/tropi1.png" style="max-width: 100%; height: auto; display: block; margin: auto;"/>
 
         <p>
           <strong>Tele Twang:</strong>
-          After the succesful build of the Tripcaster, why not go with a Telecaster? What came next, but a beautiful black Telecaster, with a custom decal, and of course Fender Deluxe Pickup.
+          After the successful build of the Tropicaster, why not go with a Telecaster? What came next was a beautiful black Telecaster with a custom decal and, of course, Fender Deluxe pickups.
         </p>
         <img alt="Black Custom Telecaster with Fender Deluxe Pickups" class="guitar-img" max-width="350" src="images/tele1.png" style="max-width: 100%; height: auto; display: block; margin: auto;"/>
 
         <p>
           <strong>Blink 182 Strat:</strong>
-          The Tom Delong inspired Strat has become a favorite of Todd. This is one hot Rocker, with a single ToneRide Rockstar humbucker, and a on/off switch...why? Why not? Who doesn't want to turn their guitar off!
+          The Tom Delonge-inspired Strat has become a favorite of Todd. This is one hot rocker, with a single ToneRider Rockstar humbucker and an on/off switch... why? Why not? Who doesn’t want to turn their guitar off!
         </p>
         <img alt="Tom Delonge Inspired Stratocaster with single humbucker" class="guitar-img" max-width="350" src="images/Blink1.png" style="max-width: 100%; height: auto; display: block; margin: auto;"/>
 
         <p>
           <strong>Purple Punch:</strong>
-          The Purple one, inspired by a can of purple paint. A glitter clear coat makes this one really sparkle. Loaded with Bootstrap ImpStout pickups, this one is ready to Rock! Bootstrap Pickups are hand made in Ohio, Todd's home state which he's proud to represent when he can, GO BUCKS!!
+          The purple one, inspired by a can of purple paint. A glitter clear coat makes this one really sparkle. Loaded with Bootstrap ImpStout pickups, this one is ready to rock. Bootstrap Pickups are handmade in Ohio, Todd’s home state, which he’s proud to represent when he can. Go Bucks!!
         </p>
         <img alt="Purple Glitter Custom Stratocaster with Bootstrap ImpStout Pickups" class="guitar-img" max-width="350" src="images/Purple1.png" style="max-width: 100%; height: auto; display: block; margin: auto;"/>
 
         <p>
           <strong>Lil'SG the Could:</strong>
-          This ¾ scale Epiphone SG was given a new life. Acquired on Facebook Marketplace, the kid guitar with a beat up finish, cheap electronics and hardware was stripped down, given a new OxBlood and Black dye job, all new electronics were installed, along with new locking tuning machines, and of course, a set of ToneRider Generator humbuckers. This Lil'SG is a real rocker for sure.
+          This ¾ scale Epiphone SG was given a new life. Acquired on Facebook Marketplace, the kid guitar with a beat-up finish, cheap electronics, and worn hardware was stripped down, given a new Oxblood and black dye job, fitted with all new electronics, locking tuning machines, and a set of ToneRider Generator humbuckers. This Lil'SG is a real rocker for sure.
         </p>
         <img alt="Refinished Epiphone Lil'SG with ToneRider Generator Humbuckers" class="guitar-img" max-width="350" src="images/LilSG.png" style="max-width: 100%; height: auto; display: block; margin: auto;"/>
+      </div>
+
+      <div class="partner-box">
+        <p>
+          Need shirts for your band, shop, or next event? Check out our sister brand,
+          <a href="https://843teez.com/" target="_blank" rel="noopener">843 Teez for custom t-shirt printing in Conway, SC</a>.
+        </p>
       </div>
     </section>
 
     <section id="contact">
       <h2>Contact Stonetone Guitars Luthier</h2>
       <p>
-        Want a custom build? Questions about a project or need a quote for a setup? Reach out below:
+        Want a custom build? Questions about a project? Need a quote for a setup or upgrade? Reach out below:
         <br /><br />
         <a href="tel:8433501943" style="display:inline-block; background-color:#1C1C1C; color:#fff; padding:12px 20px; text-decoration:none; border-radius:8px; font-size:16px; font-weight:bold;">
           📞 Call Us: 843-350-1943
@@ -331,7 +384,7 @@
           📧 Email Us: info@stonetoneguitars.com
         </a>
         <br /><br />
-        or Fill out the below form:
+        or fill out the form below:
       </p>
 
       <form action="/thank-you.html" data-netlify="true" data-netlify-recaptcha="true" method="POST" name="contact" netlify-honeypot="bot-field">
@@ -344,7 +397,6 @@
           </label>
         </p>
 
-        <!-- FIX: removed <p> wrapper around <h2> -->
         <h2>Contact Information Form</h2>
 
         <p>
@@ -379,7 +431,6 @@
     <section id="Socials">
       <h2>Follow us on Social Media</h2>
 
-      <!-- FIX: table is now auto-width + centered -->
       <div class="table-container">
         <table class="socials-table">
           <tr>
@@ -390,7 +441,6 @@
             </td>
             <td>
               <a href="https://www.instagram.com/stonetoneguitars" target="_blank" rel="noopener">
-                <!-- FIX: removed broken px="" attribute -->
                 <img alt="Follow Stonetone Guitars on Instagram" class="social-img" src="images/insta.png" style="max-width: 44px; height: auto; display: block; margin: auto;"/>
               </a>
             </td>
@@ -403,11 +453,15 @@
   <footer>
     <p>
       Stonetone Guitars™ is a
-      <a href="http://grizzbuilt.com" target="_blank" rel="noopener">GrizzBuilt™</a>
+      <a href="https://grizzbuilt.com" target="_blank" rel="noopener">GrizzBuilt™</a>
       brand.
     </p>
     <p>
-      © 2026 Stonetone Guitars | Custom Luthier Services in Conway, SC
+      Need merch too?
+      <a href="https://843teez.com/" target="_blank" rel="noopener">843 Teez prints custom t-shirts in Conway, SC</a>.
+    </p>
+    <p>
+      © 2026 Stonetone Guitars | Custom Guitar Builds, Setups &amp; Upgrades in Conway, SC
     </p>
   </footer>
 </body>
